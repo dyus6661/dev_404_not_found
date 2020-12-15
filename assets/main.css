@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 24px/35px "Space Mono", sans-serif;
+    color: #333333;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.container {
+    max-width: 1286px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.btn {
+    display: inline-block;
+    color: inherit;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    padding: 24px 43px;
+    background-color: transparent;
+    transition: all .3s;
+}
+
+.btn-primary {
+    background-color: #333333;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #292828;
+}
+
+.header__title {
+    font-family: "Inconsolata";
+    line-height: 25.18px;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+}
+
+.not-found__wrap {
+    display: flex;
+}
+
+.not-found h1 {
+    letter-spacing: -0.035em;
+}
+
+.footer {
+    font-family: "Montserrat";
+    margin-bottom: 42px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+@media screen and (min-width: 375px) {
+    .header {
+        padding-top: 20px;
+    }
+
+    .not-found__wrap {
+        flex-direction: column;
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .not-found__content {
+        margin-top: 60px;
+    }
+
+    .not-found h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 71.09px;
+    }
+
+    .not-found p {
+        margin-top: 30px;
+        margin-bottom: 66px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .not-found__wrap {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 200px;
+        padding-bottom: 293px;
+    }
+
+    .not-found__image {
+        flex-shrink: 1;
+        margin-right: 120px;
+    }
+
+    .not-found__content {
+        width: 100%;
+    }
+
+    .not-found h1 {
+        font-size: 64px;
+        line-height: 95px;
+    }
+
+    .not-found p {
+        margin-top: 36px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
